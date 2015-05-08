@@ -1,0 +1,90 @@
+// bower:scss
+// endbower
+
+
+$def-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+$def-border-radius: 6px;
+$def-color:#333;
+$def-background-color:#fafafa;
+
+$def-color-main:#262F3E;
+$def-color-icon:#A2B5D0;
+$def-color-button:#428BCA;
+
+
+html, body{
+      height: 100%;
+      margin: 0;
+      padding:0;
+}
+
+body {
+  background-color: $def-background-color;
+  font-family: $def-font-family;
+  color: $def-color;
+}
+
+p{
+  width:auto;
+}
+
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+.hero-img{
+  background-image:url('../images/tokyo-bg.jpg');
+  width:100%;height:100%;display:block;
+  min-height:100%;
+  background-position:center;
+  background-size:cover;
+}
+
+.travel-search{
+  max-width:800px;
+  max-height:500px;
+  margin:0 auto;
+  width:100%;
+  height:auto;
+  background:$def-color-main;
+  color:#fff;
+  border-radius:5px;
+  opacity: 0.95;
+  background: #262F3E;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.15);
+  padding:10px;
+  ul.travel-search-box{
+    li{
+      float:left;
+      width: 30%;
+    }
+  }
+}
+
+.center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.round-trip{
+  background-image: url('../images/round-trip.svg');
+  background-repeat:no-repeat;
+  width:36px;height:32px;
+  display: inline-block;margin-right:10px;
+  float:left;
+  &: + h3{
+    padding-top: 10px;
+  }
+}
+
+
+ul.travel-input-wrapper{
+    clear:both;
+    display: block;
+}
